@@ -105,10 +105,6 @@ var Diaspora = {
                     comment.click();
                 }
             }, 0)
-            if (window.MathJax) {
-                var math = document.getElementById("single")
-                MathJax.Hub.Queue(["Typeset", MathJax.Hub, math])
-            }
         })
     },
     preview: function() {
@@ -394,7 +390,7 @@ $(function() {
 			}
 		})
 	};
-	var path = window.searchDbPath || "/search.xml";
+	var path = "/search.xml";
 	if(document.getElementById('local-search-input') !== null){
 		searchFunc(path, 'local-search-input', 'local-search-result');
 	}
@@ -547,7 +543,7 @@ $(function() {
                 }else{
                   hash = $(e.target).attr('href')
                 }
-                to  = $(decodeURI(hash))
+                to  = $("a.headerlink[href='" + hash + "']")
                 $("html,body").animate({
                   scrollTop: to.offset().top - 50
                 }, 300);

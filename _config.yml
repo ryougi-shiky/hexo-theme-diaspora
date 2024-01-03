@@ -25,12 +25,7 @@ cover:
   - /img/cover.jpg
   - /img/welcome-cover.jpg
 
-# 是否显示Twitter分享卡片图像(图像尺寸要求：1200*600，creatorid不需要带@符号。注意：链接必须是完整url，否则Twitter将无法读取图片信息）
-twitterpic:
-  enable: false
-  src: https://bangdream.moe/img/ident.png
-  creatorid: yourtwitteridhere
-
+ 
 # 是否使用mathjax
 mathjax: false
 
@@ -50,8 +45,8 @@ hitokoto: true
 links:
     facebook: /
     twitter: /
-    github: /
-    wechat: /img/logo.png
+    github: https://github.com/ryougi-shiky
+    wechat: 
     email: mailto:xxxx@gmail.com
   
 # 备案
@@ -76,11 +71,11 @@ gitalk:
     # 应用秘钥
     clientSecret: ''
     # issue仓库名
-    repo: ''
+    repo: 'myblog'
     # Github名
-    owner: ''
+    owner: 'ryougi-shiky'
     # Github名
-    admin: ['']
+    admin: ['ryougi-shiky']
     # Ensure uniqueness and length less than 50
     id: location.pathname
     # Facebook-like distraction free mode
@@ -97,8 +92,3 @@ favicon: /img/favicon.png
 
 # rss文件
 rss: atom.xml
-
-# 要使用版权信息可以在这配置并设定许可方式，可以从 https://creativecommons.org/about/cclicenses/ 查询
-copyright:
-    enable: false
-    license: "CC BY-NC-ND"
